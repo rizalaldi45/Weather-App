@@ -1,3 +1,6 @@
+
+console.log('js Running !')
+
 resetForm = ()=>{
     document.getElementById('form1').reset()
 }
