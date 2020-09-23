@@ -12,7 +12,7 @@ submitBtn.addEventListener('click', (e)=>{
     resetForm()
     e.preventDefault()
     
-    fetch(`http://localhost:3000/weather?address=${inputData}`).then(response => {
+    fetch(`/weather?address=${inputData}`).then(response => {
     response.json().then(data => {
         if (data.error){
             setMessage1.innerHTML = data.error
