@@ -8,7 +8,7 @@ const forecast = (long, lat, callback)=> {
         }else if(body.success === false){
             callback('Cant Found Your Location :(', undefined)
         }else{
-            callback(undefined, `Its ${body.current.weather_descriptions[0]}. This is current ${body.current.temperature} C degrees out. There is a ${body.current.precip} chance of rain`)
+            callback(undefined, `Its ${body.current.weather_descriptions[0]}. This is current ${body.current.temperature} C degrees out. There is a ${body.current.precip} chance of rain. The humidity its ${body.current.humidity} & pressure is ${body.current.pressure}`)
         }
     })
  

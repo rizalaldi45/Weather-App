@@ -18,8 +18,8 @@ submitBtn.addEventListener('click', (e)=>{
             setMessage1.innerHTML = data.error
             setMessage2.innerHTML = ' '
         }else{
-            setMessage1.innerHTML = ' '
-            setMessage2.innerHTML = data.location + '<br>' + data.forecast
+            setMessage1.innerHTML = data.forecast
+            setMessage2.innerHTML = data.location 
         }
     })
 })
